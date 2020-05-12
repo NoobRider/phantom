@@ -141,12 +141,12 @@ def send_start(bot, update):
         pass
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
-    text = "𝙃𝙚𝙮...{} 𝙃𝙤𝙬 𝙖𝙧𝙚 𝙮𝙤𝙪..."
-    text += "\n𝑀𝑦 𝑁𝑎𝑚𝑒 𝑖𝑠 {}... 𝐴 𝑃𝑜𝑤𝑒𝑟𝑓𝑢𝑙 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝑃𝑟𝑜𝐵𝑜𝑡 𝑤𝑖𝑡ℎ 𝑙𝑎𝑡𝑒𝑠𝑡 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠 𝑎𝑛𝑑 𝑒𝑎𝑠𝑖𝑒𝑟 𝑐𝑜𝑚𝑚𝑎𝑛𝑑𝑠.... 𝑇ℎ𝑒 𝑛𝑖𝑔ℎ𝑡 𝑖𝑠 𝑓𝑢𝑙𝑙 𝑜𝑓 𝑑𝑎𝑟𝑘 𝑎𝑛𝑑 𝑡𝑒𝑟𝑟𝑜𝑟𝑠..." 
-    text += "\n\n𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐠𝐞𝐭 𝐦𝐞 𝐢𝐧𝐭𝐨 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩𝐬..."  
+    text = "ഹായ്...{} എന്തൊക്ക ഉണ്ട്"
+    text += "\nഎന്റെ പേര് {} ഞാൻ ഒരു അടിപൊളി ടെലിഗ്രാം ഗ്രൂപ്പ് മാനേജ്‌മെന്റ് ബോട്ട് ആണ്....✨" 
+    text += "\n\nഎന്നെ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ആഡ് ചെയ്യാൻ താഴെ add me ഉപയോഗിക്കുക"  
 
-    keyboard = [[InlineKeyboardButton(text="💠Help💠", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
-    keyboard += [[InlineKeyboardButton(text="👿Add Me😈",url="http://t.me/zoldycktmbot?startgroup=true"),InlineKeyboardButton(text="☣️Owner☣️",url="https://telegram.dog/Imperialxx")]]
+    keyboard = [[InlineKeyboardButton(text="🌠Help 🌠", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
+    keyboard += [[InlineKeyboardButton(text="✨Add me✨",url="http://t.me/moongabot?startgroup=true"),InlineKeyboardButton(text="☣️Owner☣️",url="https://telegram.dog/Imperialxx")]]
 
     update.effective_message.reply_photo(HELP_PANEL_STRING.ALLUKA_IMG,text.format(escape_markdown(first_name), escape_markdown(bot.first_name)), reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
 
