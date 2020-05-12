@@ -146,7 +146,7 @@ def send_start(bot, update):
     text += "\n\nഎന്നെ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ആഡ് ചെയ്യാൻ താഴെ add me ഉപയോഗിക്കുക"  
 
     keyboard = [[InlineKeyboardButton(text="🌠Help 🌠", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
-    keyboard += [[InlineKeyboardButton(text="✨Add me✨",url="http://t.me/moongabot?startgroup=true"),InlineKeyboardButton(text="☣️Owner☣️",url="https://telegram.dog/Imperialxx")]]
+    keyboard += [[InlineKeyboardButton(text="✨Add me✨",url="http://t.me/moongabot?startgroup=true"),InlineKeyboardButton(text="☣️Owner☣️",url="https://telegram.dog/Kuruthamkettavan")]]
 
     update.effective_message.reply_photo(HELP_PANEL_STRING.ALLUKA_IMG,text.format(escape_markdown(first_name), escape_markdown(bot.first_name)), reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
 
